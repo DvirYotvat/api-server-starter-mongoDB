@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Edit Tour</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- load bootstrap via CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    "></script> <!-- load jquery via CDN -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="/js/edit_tour_form.js">
+    </script> <!-- load our javascript file -->
+</head>
+
+<body>
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <h1>Edit Tour</h1>
+
+        <!-- OUR FORM -->
+        <form id="edit_form" name="edit_form" method="PUT">
+
+            <!-- start date -->
+            <div id="name-group" class="form-group">
+                <label for="date">Start Date</label>
+                <input type="date" class="form-control" name="date" id="date" placeholder="Enter date (dd-mm-yyyy)"
+                    required>
+                <!-- errors will go here -->
+            </div>
+
+            <!-- duration -->
+            <div id="name-group" class="form-group">
+                <label for="duration">Duration</label>
+                <input type="text" class="form-control" name="duration" id="duration"
+                    placeholder="Enter duration (must be at lest 1)" required>
+                <!-- errors will go here -->
+            </div>
+
+            <!-- price -->
+            <div id="name-group" class="form-group">
+                <label for="price">Price</label>
+                <input type="text" class="form-control" name="price" id="price"
+                    placeholder="Enter tour price" required>
+                <!-- errors will go here -->
+            </div>
+
+            <br>
+            <!--guide list -- the data comes in ajax call in tour_utils.js  -->
+            <label for="guide_name">Choose a guide:</label>
+            <select name="guide_name" id="guide_name">             
+            </select>
+
+            <button type="submit" id = "submit_button" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>

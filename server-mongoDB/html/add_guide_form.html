@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!doctype html>
+<html>
+<head>
+    <title>ADD Guide</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- load bootstrap via CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    "></script> <!-- load jquery via CDN -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="js/add_guide.js">
+    </script> <!-- load our javascript file -->
+    
+
+</head>
+
+<body>
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <h1>Add new guide</h1>
+
+        <!-- OUR FORM -->
+        <form id="guide_form" name="guide_form" method="POST">
+
+           
+           
+            <br>
+            <!-- guide of the trip -->
+            <h3>guide</h3>
+            <div id="guide-group" class="form-group">
+                <label for="guide">guide name</label>
+                <input type="text" class="form-control" name="guide_name" id="guide_name" placeholder="jhon" required>
+                <!-- errors will go here -->
+            </div>
+            <!-- guide email-->
+            <div id="guide-group" class="form-group">
+                <label for="guide">guide email</label>
+                <input type="text" class="form-control" name="guide_email" id="guide_email" placeholder="jhon@gmail.com" required>
+                <!-- errors will go here -->
+            </div>
+            <!-- guide cellular -->
+            <div id="guide-group" class="form-group">
+                <label for="guide">guide cellular</label>
+                <input type="text" class="form-control" name="guide_cellular" id="guide_cellular" placeholder="0523332200" required>
+                <!-- errors will go here -->
+            </div>
+
+
+            <button type="submit" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+            
+        </form>
+        <br>
+    </div>
+   
+</body>
+
+</html>
